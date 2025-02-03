@@ -6,7 +6,7 @@
 $mod_strings['LBL_ST_TIME_MANAGEMENT_ACCOUNTS_FROM_ST_TIME_MANAGEMENT_TITLE'] = 'Time Management';
 
 
-// created: 2025-02-03 18:34:41
+// created: 2025-02-03 18:39:46
 $mod_strings['LNK_NEW_ACCOUNT'] = 'Create Company';
 $mod_strings['LNK_ACCOUNT_LIST'] = 'View Companies';
 $mod_strings['LNK_IMPORT_ACCOUNTS'] = 'Import Companies';
@@ -20,4 +20,5 @@ $mod_strings['LBL_MEMBER_ORG_SUBPANEL_TITLE'] = 'Member Organizations';
 $mod_strings['LBL_HOMEPAGE_TITLE'] = 'My Companies';
 $mod_strings['LBL_PARENT_ACCOUNT_ID'] = 'Parent Company ID';
 $mod_strings['LBL_MODULE_NAME'] = 'Companies';
+$mod_strings['LBL_COMPANY_ID'] = 'company id';
 
