@@ -1,5 +1,5 @@
 <?php
-class CustomLogic
+class CustomLogic  //naming convention
 {
     function setCID($bean, $event, $arguments)
     {
