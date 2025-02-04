@@ -55,6 +55,9 @@ $viewdefs['Opportunities']['EditView'] = array(
                     'account_name',
                 ),
                 array(
+                    array('name' => 'company_id_c', 'label' => 'LBL_COMPANY_ID', 'readonly' => true), // Read-only field
+                ),
+                array(
                     array('name'=>'currency_id','label'=>'LBL_CURRENCY'),
                     array('name'=>'date_closed'),
                 ),
