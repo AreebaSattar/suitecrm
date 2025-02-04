@@ -16,17 +16,14 @@ $mod_strings = array(
     'LBL_INVITEE' => 'Contacts',
     'LBL_CURRENCIES' => 'Currencies',
     'LBL_LIST_OPPORTUNITY_NAME' => 'Name',
-    'LBL_LIST_ACCOUNT_NAME' => 'Account Name',
     'LBL_LIST_AMOUNT' => 'Pipeline Amount',
     'LBL_LIST_AMOUNT_USDOLLAR' => 'Amount',
     'LBL_LIST_DATE_CLOSED' => 'Close',
     'LBL_LIST_SALES_STAGE' => 'Sales Stage',
-    'LBL_ACCOUNT_ID' => 'Account ID',
     'LBL_CURRENCY_NAME' => 'Currency Name',
     'LBL_CURRENCY_SYMBOL' => 'Currency Symbol',
 
     'UPDATE' => 'Pipeline - Currency Update',
-    'LBL_ACCOUNT_NAME' => 'Account Name:',
     'LBL_AMOUNT' => 'Pipeline Amount:',
     'LBL_AMOUNT_USDOLLAR' => 'Amount:',
     'LBL_CURRENCY' => 'Currency:',
@@ -73,3 +70,4 @@ $mod_strings = array(
     'LBL_AOS_CONTRACTS' => 'Contracts',
     'LBL_AOS_QUOTES' => 'Quotes',
 );
+$mod_strings['LBL_PIPELINE_ID'] = 'pipeline id';
