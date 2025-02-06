@@ -138,7 +138,16 @@ $viewdefs ['Opportunities'] =
                                             array(
                                                 'name' => 'company_id_c',
                                                 'label' => 'LBL_COMPANY_ID',
-                                                'readonly' => true,  // Read-only field
+                                                'readonly' => true,
+                                            ),
+                                    ),
+                                8 =>
+                                    array(
+                                        0 =>
+                                            array(
+                                                'name' => 'pipeline_id',
+                                                'label' => 'LBL_COMPANY_ID',
+                                                'readonly' => true,
                                             ),
                                     ),
                             ),
