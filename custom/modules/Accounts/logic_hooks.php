@@ -9,8 +9,8 @@ $hook_array['before_save'][] = Array(
     1,
     'Set company_id_c with prefix',
     'custom/modules/Accounts/CustomLogic.php',
-    'CustomLogic',
-    'setCID'
+    'CustomLogicHookCompanyId',
+    'setCompanyId'
 );
 $hook_array['before_save'][] = Array(77, 'updateGeocodeInfo', 'modules/Accounts/AccountsJjwg_MapsLogicHook.php','AccountsJjwg_MapsLogicHook', 'updateGeocodeInfo'); 
 $hook_array['after_save'] = Array(); 
