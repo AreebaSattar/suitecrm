@@ -99,6 +99,9 @@ $viewdefs = array(
                                         ),
                                     ),
                                     array(
+                                        array('name' => 'pipeline_id', 'label' => 'LBL_PIPELINE_ID'),
+                                    ),
+                                    array(
                                         array(
                                             'name' => 'currency_id',
                                         ),
