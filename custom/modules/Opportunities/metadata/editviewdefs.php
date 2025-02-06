@@ -52,11 +52,29 @@ $viewdefs['Opportunities']['EditView'] = array(
 
                 array(
                     array('name'=>'name'),
-                    'account_name',
                 ),
                 array(
-                    array('name' => 'company_id_c', 'label' => 'LBL_COMPANY_ID', 'readonly' => false), // Read-only field
+                    array(
+                        'name' => 'account_name',
+                        'displayParams' => array(
+                            'field_to_name_array' => array(
+                                'id' => 'account_id',
+                                'name' => 'account_name',
+                                'company_id_c' => 'company_id_c' // This maps 'company_id_c' from Accounts to Opportunities
+                            ),
+                        ),
+                    ),
                 ),
+
+                array(
+                    'name' => 'company_id_c',
+                    'label' => 'LBL_COMPANY_ID',
+                    'displayParams' => array(
+                        'readonly' => true
+                    ),
+                ),
+
+
                 array(
                     array('name'=>'currency_id','label'=>'LBL_CURRENCY'),
                     array('name'=>'date_closed'),

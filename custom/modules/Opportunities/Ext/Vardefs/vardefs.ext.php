@@ -2,6 +2,16 @@
  //WARNING: The contents of this file are auto-generated
 
 
+$dictionary['Opportunity']['fields']['company_id_c'] = array(
+'name' => 'company_id_c',
+'vname' => 'LBL_COMPANY_ID',
+'type' => 'varchar',
+'len' => '36',
+'required' => false,
+'reportable' => true,
+);
+
+
 $dictionary['Opportunity']['fields']['pipeline_id'] = array(
     'name' => 'pipeline_id',
     'vname' => 'LBL_PIPELINE_ID',
