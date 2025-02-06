@@ -146,7 +146,7 @@ $viewdefs ['Opportunities'] =
                                         0 =>
                                             array(
                                                 'name' => 'pipeline_id',
-                                                'label' => 'LBL_COMPANY_ID',
+                                                'label' => 'LBL_PIPELINE_ID',
                                                 'readonly' => true,
                                             ),
                                     ),
