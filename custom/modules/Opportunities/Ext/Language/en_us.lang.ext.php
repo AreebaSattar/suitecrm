@@ -2,10 +2,6 @@
 // WARNING: The contents of this file are auto-generated
 
 
-$mod_strings['LBL_COMPANY_ID'] = 'Company ID';
-$app_strings['LBL_COMPANY_ID'] = 'Company ID';
-
-
 
 $app_strings['LBL_PIPELINE_ID'] = 'Pipeline ID';
 
@@ -82,3 +78,7 @@ $mod_strings = array(
     'LBL_AOS_QUOTES' => 'Quotes',
 );
 $mod_strings['LBL_PIPELINE_ID'] = 'pipeline id';
+
+$mod_strings['LBL_COMPANY_ID'] = 'Company ID';
+$app_strings['LBL_COMPANY_ID'] = 'Company ID';
+
