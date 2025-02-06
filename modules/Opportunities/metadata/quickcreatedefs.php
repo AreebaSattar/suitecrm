@@ -81,7 +81,14 @@ $viewdefs = array(
               'displayParams'=>array('required'=>true),
             ),
             array(
-              'name' => 'account_name',
+                'name' => 'account_name',
+                'displayParams' => array(
+                    'field_to_name_array' => array(
+                        'id' => 'account_id',
+                        'name' => 'account_name',
+                        'company_id_c' => 'company_id_c' // This maps 'company_id_c' from Accounts to Opportunities
+                    ),
+                ),
             ),
           ),
           array(

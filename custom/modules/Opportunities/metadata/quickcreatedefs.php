@@ -84,21 +84,13 @@ $viewdefs = array(
                                             'name' => 'account_name',
                                         ),
                                     ),
-
                                     array(
-                                        array(
-                                            'name' => 'company_id_c',
-                                            'label' => 'LBL_COMPANY_ID',  // Make sure this label exists in your language files
-                                            'displayParams' => array(
-                                                'readonly' => true,  // Optional: make the field readonly
-                                            ),
-                                        ),
                                         array(
                                             'name' => 'currency_id',
                                         ),
-//                                        array(
-//                                            'name' => 'opportunity_type',
-//                                        ),
+                                        array(
+                                            'name' => 'opportunity_type',
+                                        ),
                                     ),
                                     array(
                                         'amount',
