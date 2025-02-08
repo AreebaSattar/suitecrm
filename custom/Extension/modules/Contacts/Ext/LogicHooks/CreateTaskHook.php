@@ -4,6 +4,6 @@ $hook_array['after_save'][] = array(
     'Create task if contact meets conditions',
     'custom/modules/Contacts/CreateTaskOnNewContact.php',
     'CreateTaskOnNewContact',
-    'afterSave'
+    'newTaskOnContact',
 );
 ?>
