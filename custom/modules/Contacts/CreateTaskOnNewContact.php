@@ -10,8 +10,11 @@ class CreateTaskOnNewContact
             return;
         }
 
+        error_log("Logic Hook triggered for Contact: " . $bean->id);
 
-        $valid_lead_sources = array('Trade Show', 'Website');
+        $valid_lead_sources = array('Trade Show', 'Web Site');
+        $GLOBALS['log']->info("Email: " . $bean->email1);
+        $GLOBALS['log']->info("Phone: " . $bean->phone_mobile);
 
 
         if (!in_array($bean->lead_source, $valid_lead_sources)) {
@@ -23,10 +26,13 @@ class CreateTaskOnNewContact
 
 
             $task = BeanFactory::newBean('Tasks');
-            $task->name = "Follow up with " . $bean->first_name . " " . $bean->last_name;
+            $task->name = "Follow up - " . $bean->first_name . " " . $bean->last_name;
             $task->status = "Not Started";
             $task->parent_type = "Contacts";
             $task->parent_id = $bean->id;
+            $task->date_due = date('Y-m-d', strtotime('today'));
+            $task->description = $bean->phone_mobile;
+            $task->priority = "High";
             $task->assigned_user_id = $bean->assigned_user_id; // Assign to the same user
 
             $task->save();
