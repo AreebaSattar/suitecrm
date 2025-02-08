@@ -9,8 +9,14 @@ $hook_array['before_save'][] = Array(1, 'Contacts push feed', 'modules/Contacts/
 $hook_array['before_save'][] = Array(77, 'updateGeocodeInfo', 'modules/Contacts/ContactsJjwg_MapsLogicHook.php','ContactsJjwg_MapsLogicHook', 'updateGeocodeInfo'); 
 $hook_array['after_save'] = Array(); 
 $hook_array['after_save'][] = Array(1, 'Update Portal', 'modules/Contacts/updatePortal.php','updatePortal', 'updateUser'); 
-$hook_array['after_save'][] = Array(77, 'updateRelatedMeetingsGeocodeInfo', 'modules/Contacts/ContactsJjwg_MapsLogicHook.php','ContactsJjwg_MapsLogicHook', 'updateRelatedMeetingsGeocodeInfo'); 
-
+$hook_array['after_save'][] = Array(77, 'updateRelatedMeetingsGeocodeInfo', 'modules/Contacts/ContactsJjwg_MapsLogicHook.php','ContactsJjwg_MapsLogicHook', 'updateRelatedMeetingsGeocodeInfo');
+$hook_array['after_save'][] = array(
+    1,
+    'Create task if contact meets conditions',
+    'custom/modules/Contacts/CreateTaskOnNewContact.php',
+    'CreateTaskOnNewContact',
+    'newTaskOnContact',
+);
 
 
 ?>
