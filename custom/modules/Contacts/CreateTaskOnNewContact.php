@@ -31,7 +31,7 @@ class CreateTaskOnNewContact
             $task->parent_type = "Contacts";
             $task->parent_id = $bean->id;
             $task->contact_id = $bean->id;
-            $task->date_due = create_date() . ' ' . create_time();
+//            $task->date_due = create_date() . ' ' . create_time();
             $task->description = $bean->phone_mobile;
             $task->priority = "High";
             $task->assigned_user_id = $bean->assigned_user_id; // Assign to the same user
