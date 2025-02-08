@@ -6,6 +6,7 @@ class CreateTaskOnNewContact
     function newTaskOnContact($bean, $event, $arguments)
     {
 
+        global $timedate;
         if (!empty($bean->fetched_row) && isset($bean->fetched_row['id'])) {
             return;
         }
@@ -24,17 +25,18 @@ class CreateTaskOnNewContact
 
         if (!empty($bean->email1) && !empty($bean->phone_mobile)) {
 
-
+            $nowDateTime = $timedate->nowDb();
             $task = BeanFactory::newBean('Tasks');
             $task->name = "Follow up - " . $bean->first_name . " " . $bean->last_name;
             $task->status = "Not Started";
             $task->parent_type = "Contacts";
             $task->parent_id = $bean->id;
             $task->contact_id = $bean->id;
-//            $task->date_due = create_date() . ' ' . create_time();
+            $task->date_due = $nowDateTime;
+            $task->time_due = "23:59:59";
             $task->description = $bean->phone_mobile;
             $task->priority = "High";
-            $task->assigned_user_id = $bean->assigned_user_id; // Assign to the same user
+            $task->assigned_user_id = $bean->assigned_user_id;
 
             $task->save();
 
