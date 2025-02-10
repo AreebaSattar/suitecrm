@@ -70,4 +70,4 @@ $mod_strings = array(
     'LBL_AOS_CONTRACTS' => 'Contracts',
     'LBL_AOS_QUOTES' => 'Quotes',
 );
-$mod_strings['LBL_PIPELINE_ID'] = 'pipeline id';
+$mod_strings['LBL_PIPELINE_ID'] = 'Pipeline ID';

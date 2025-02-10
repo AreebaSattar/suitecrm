@@ -14,14 +14,10 @@ class CreateTaskOnNewContact
         error_log("Logic Hook triggered for Contact: " . $bean->id);
 
         $valid_lead_sources = array('Trade Show', 'Web Site');
-        $GLOBALS['log']->info("Email: " . $bean->email1);
-        $GLOBALS['log']->info("Phone: " . $bean->phone_mobile);
-
 
         if (!in_array($bean->lead_source, $valid_lead_sources)) {
             return;
         }
-
 
         if (!empty($bean->email1) && !empty($bean->phone_mobile)) {
 
@@ -68,8 +64,8 @@ class CreateTaskOnNewContact
         require_once('include/SugarPHPMailer.php');
         $mail = new SugarPHPMailer();
         $mail->setMailerForSystem();
-        $mail->From = $current_user->email1 ?: "areeba@sage-teck.com"; // Fallback email
-        $mail->FromName = "CRM Notifications";
+        $mail->From = $current_user->email1 ?: "areeba@sage-teck.com";
+        $mail->FromName = "CRM";
         $mail->Subject = $subject;
         $mail->Body = $emailBody;
         $mail->isHTML(true);
