@@ -20,5 +20,5 @@ $mod_strings['LBL_MEMBER_ORG_SUBPANEL_TITLE'] = 'Member Organizations';
 $mod_strings['LBL_HOMEPAGE_TITLE'] = 'My Companies';
 $mod_strings['LBL_PARENT_ACCOUNT_ID'] = 'Parent Company ID';
 $mod_strings['LBL_MODULE_NAME'] = 'Companies';
-$mod_strings['LBL_COMPANY_ID'] = 'company id';
+$mod_strings['LBL_COMPANY_ID'] = 'Company ID';
 
