@@ -11,13 +11,10 @@ class CreateTaskOnNewContact
             return;
         }
 
-        error_log("Logic Hook triggered for Contact: " . $bean->id);
+//        error_log("Logic Hook triggered for Contact: " . $bean->id);
+//        C:\xampp\apache\logs\error.log
 
-        $valid_lead_sources = array('Trade Show', 'Web Site');
 
-        if (!in_array($bean->lead_source, $valid_lead_sources)) {
-            return;
-        }
 
         if (!empty($bean->email1) && !empty($bean->phone_mobile)) {
 
@@ -36,7 +33,7 @@ class CreateTaskOnNewContact
 
             $task->save();
 
-            $GLOBALS['log']->info("Task created and linked to Contact ID: " . $bean->id);
+            $GLOBALS['log']->fatal("Task created and linked to Contact ID: " . $bean->id);
             $this->sendEmailNotification($task);
         }
     }
