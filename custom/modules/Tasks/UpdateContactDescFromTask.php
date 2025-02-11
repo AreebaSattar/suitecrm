@@ -15,17 +15,21 @@ class UpdateContactDescFromTask
         }
 
         $contact = BeanFactory::getBean('Contacts', $bean->parent_id);
+        $GLOBALS['log']->fatal('Contacts', $bean->parent_id);
+
 
         if (!$contact->load_relationship('tasks')) {
             return;
         }
+        $taskIds = $contact->tasks->get();
+        $GLOBALS['log']->fatal('$taskIds', $taskIds);
 
         $relatedTasks = $contact->tasks->getBeans();
 
         $openTasks = [];
         foreach ($relatedTasks as $task) {
             if ($task->status !== 'Completed') {
-                $openTasks[] = $task;  // Any non-completed task
+                $openTasks[] = $task;
             }
         }
 
