@@ -38,6 +38,8 @@
  * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
 *}
+<link rel="stylesheet" type="text/css" href="custom/themes/SuiteP/css/custom-login.css?v=2">
+
 <script type='text/javascript'>
     var LBL_LOGIN_SUBMIT = '{sugar_translate module="Users" label="LBL_LOGIN_SUBMIT"}';
     var LBL_REQUEST_SUBMIT = '{sugar_translate module="Users" label="LBL_REQUEST_SUBMIT"}';
@@ -51,7 +53,9 @@
 
     <div class="p_login_top">
 
-        <a title="SuiteCRM" href="https://www.suitecrm.com">SuiteCRM</a>
+        <a title="SuiteCRM" href="https://www.suitecrm.com">
+            <img src="custom/themes/SuiteP/images/custom-logo.jpg" alt="Company Logo" width="200">
+        </a>
 
     </div>
 
@@ -65,7 +69,7 @@
 
             <form class="form-signin" role="form" action="index.php" method="post" name="DetailView" id="form"
                   onsubmit="return document.getElementById('cant_login').value == ''" autocomplete="off">
-                <img src="custom/themes/SuiteP/images/custom-logo.jpg" alt="Company Logo" width="50">
+                <img src="custom/themes/SuiteP/images/custom-logo.jpg" alt="Company Logo" width="200">
                 <span class="error" id="browser_warning" style="display:none">
             {sugar_translate label="WARN_BROWSER_VERSION_WARNING"}
         </span>
