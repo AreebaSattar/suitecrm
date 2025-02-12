@@ -1,0 +1,9 @@
+div.p_login .p_login_top a {
+    display: block;
+    background-image: url("../../../../custom/themes/SuiteP/images/custom-logo.jpg") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 50px;
+}

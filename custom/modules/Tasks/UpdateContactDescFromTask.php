@@ -21,8 +21,6 @@ class UpdateContactDescFromTask
         if (!$contact->load_relationship('tasks')) {
             return;
         }
-        $taskIds = $contact->tasks->get();
-        $GLOBALS['log']->fatal('$taskIds', $taskIds);
 
         $relatedTasks = $contact->tasks->getBeans();
 
