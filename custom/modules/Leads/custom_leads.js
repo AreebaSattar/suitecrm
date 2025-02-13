@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    "use strict";
+    // "use strict";
 
     function toggleStatusDescription() {
         var statusDropdown = document.getElementById("status"); //status dropdown options
