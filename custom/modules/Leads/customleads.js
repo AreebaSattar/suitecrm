@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function toggleStatusDescription() {   //For Status Description
         var statusDropdown = document.getElementById("status");
-        var statusWrapper = document.querySelector('[data-field="status_description"]');
+        var statusWrapper = document.querySelector('[data-field="status_description"]');//field ka parent
         var statusDescriptionField=document.getElementById("status_description");
         if (statusWrapper && statusDropdown && statusDescriptionField ) { //all must present conditon
             var statusValue = statusDropdown.value;
