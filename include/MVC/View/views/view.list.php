@@ -268,10 +268,12 @@ class ViewList extends SugarView
 
     /**
      * Process List View
+
      */
     public function listViewProcess()
     {
         $this->processSearchForm();
+
         $this->lv->searchColumns = $this->searchForm->searchColumns;
 
         if (!$this->headers) {
