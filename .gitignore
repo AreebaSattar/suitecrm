@@ -4,6 +4,8 @@ custom/history/
 upload/
 logs/
 suitecrm.log
+suitecrm_1.log
+suitecrm_2.log
 install.log
 upgradeWizard.log
 upgradeWizard/
@@ -31,3 +33,8 @@ package-lock.json
 # Coverage & test files
 coverage/
 junit.xml
+modules/AOD_Index/Index/*.cfs
+modules/AOD_Index/Index/*.sti
+modules/AOD_Index/Index/*.del
+modules/AOD_Index/Index/*
+
