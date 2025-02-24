@@ -71,3 +71,4 @@ $mod_strings = array(
     'LBL_AOS_QUOTES' => 'Quotes',
 );
 $mod_strings['LBL_PIPELINE_ID'] = 'Pipeline ID';
+$mod_strings['LBL_NEW_BRANDS'] = 'Brands';
