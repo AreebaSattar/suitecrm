@@ -149,6 +149,7 @@ $app_list_strings['moduleList']['SurveyQuestions'] = 'Survey Questions';
 $app_list_strings['moduleList']['SurveyQuestionOptions'] = 'Survey Question Options';
 $app_list_strings['moduleList']['st_time_management'] = 'Time Management';
 $app_list_strings['moduleList']['new_Brands'] = 'Brands';
+$app_list_strings['moduleList']['new_Opportunities_Details'] = 'Opportunities Details';
 $app_list_strings['moduleListSingular']['Home'] = 'Home';
 $app_list_strings['moduleListSingular']['Dashboard'] = 'Dashboard';
 $app_list_strings['moduleListSingular']['Contacts'] = 'Contact';
